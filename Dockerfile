@@ -19,5 +19,7 @@ ADD start.sh /start.sh
 RUN chmod 755 /start.sh
 
 EXPOSE $SS_SERVER_PORT
+EXPOSE 80
+EXPOSE 22
 
 CMD ["sh", "-c", "/start.sh"]
